@@ -145,7 +145,7 @@ def gen_user(choice):
     if choice == "9":
         c = d = random.choices(a)
         d = random.choices(e)
-       f = [c[0], d[0], d[0], d[0], c[0]]
+        f = [c[0], d[0], d[0], d[0], c[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
@@ -308,7 +308,7 @@ def gen_user(choice):
             f =  [c[0], c[0], c[0], c[0], s[0], s[0], s[0], s[0]]
             random.shuffle(f)
             username = ''.join(f)
-           else:
+          else:
             pass
     if choice == "21":
         c = d = random.choices(a)
@@ -322,6 +322,8 @@ def gen_user(choice):
             f =  [c[0], c[0], d[0], c[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
+        else:
+            pass
     return username
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
