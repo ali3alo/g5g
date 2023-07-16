@@ -238,7 +238,7 @@ def gen_user(choice):
             f =  [c[0], s[0], s[0], s[0], s[0], s[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
-         else:
+        else:
             pass
     if choice == "16":
         c = d = random.choices(a)
@@ -266,7 +266,7 @@ def gen_user(choice):
             f =  [c[0], s[0], c[0], s[0], c[0], s[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
-         else:
+        else: 
             pass
     if choice == "18":
         c = d = random.choices(a)
@@ -280,7 +280,7 @@ def gen_user(choice):
             f =  [c[0], c[0], s[0], s[0], c[0], c[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
-         else:
+        else:
             pass
     if choice == "19":
         c = d = random.choices(a)
@@ -294,7 +294,7 @@ def gen_user(choice):
             f =  [c[0], c[0], c[0], c[0], c[0], s[0], s[0]]
             random.shuffle(f)
             username = ''.join(f)
-         else:
+        else:
             pass
     if choice == "20":
         c = d = random.choices(a)
@@ -308,7 +308,7 @@ def gen_user(choice):
             f =  [c[0], c[0], c[0], c[0], s[0], s[0], s[0], s[0]]
             random.shuffle(f)
             username = ''.join(f)
-          else:
+        else:
             pass
     if choice == "21":
         c = d = random.choices(a)
