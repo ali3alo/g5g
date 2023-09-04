@@ -232,16 +232,16 @@ def gen_user(choice):
             pass
     if choice == "15":
         ka = random.choices(a)
-    	fh = random.choices(b)
-    	kk = random.choices(fh)
-    	f =  ["vip", kk[0], kk[0], kk[0]]
+    	d = random.choices(b)
+    	kk = random.choices(d)
+    	f =  ["vip", kk[0], kk[0], kk[0], kk[0]]
         random.shuffle(f)
     	username = ''.join(f)
         if username in banned[0]:
             ka = random.choices(a)
-            fh = random.choices(b)
-    	    kk = random.choices(fh)
-    	    f =  ["vip", kk[0], kk[0], kk[0]]
+            d = random.choices(b)
+    	    kk = random.choices(d)
+    	    f =  ["vip", kk[0], kk[0], kk[0], kkk[0]] 
             random.shuffle(f)
     	    username = ''.join(f)
         else:
