@@ -168,15 +168,15 @@ def gen_user(choice):
         d = random.choices(bbk) 
         i = random.choices(v)
         f = [c[0], i[0], d[0], d[0], d[0]]
-        random.shuffle(f)
-        username = ''.join(f)
+        random.shuffle(fathon)
+        username = ''.join(faton)
         if username in banned[0]:
             c = random.choices(a) 
             d = random.choices(bbk) 
             i = random.choices(v) 
             f =  [c[0], i[0], d[0], d[0], d[0] 
-            random.shuffle(f)
-            username = ''.join(f)          
+            random.shuffle(fathon)
+            username = ''.join(fathon)          
         else:
             pass
     return username
