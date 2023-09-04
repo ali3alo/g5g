@@ -16,9 +16,9 @@ from threading import Thread
 a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
-km = 'vip'
+k = '1234567890'
 t = '123'
-r = 'qwertyuiopassdfghjklzxcvbnm'
+aa = 'qwertyuiopassdfghjklzxcvbnm'
 
 banned = []
 isclaim = ["off"]
@@ -119,15 +119,15 @@ def gen_user(choice):
             pass
     if choice == "6":
         cq = random.choices(a)
-        dq = random.choices(r)
-        sq = random.choices(e) 
+        dq = random.choices(e)
+        sq = random.choices(aa) 
         f =  [cq[0], dq[0], dq[0], dq[0], sq[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             cq = random.choices(a) 
-            dq = random.choices(r)
-            sq = random.choices(e) 
+            dq = random.choices(e)
+            sq = random.choices(aa) 
             f =  [cq[0], dq[0], dq[0], dq[0], sq[0]]
             random.shuffle(f)
             username = ''.join(f)
@@ -149,31 +149,29 @@ def gen_user(choice):
             pass
     if choice == "9":
         c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(r) 
-        f = [c[0], s[0], d[0], d[0], s[0], c[0]]
+        d = random.choices(b)
+        f = [c[0], c[0], d[0], d[0], c[0], c[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             c = d = random.choices(a)
             d = random.choices(b)
-            s = random.choices(r) 
-            f = [c[0], s[0], d[0], d[0], s[0], c[0]]
+            f = [c[0], c[0], d[0], d[0], c[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
             pass
     if choice == "10":
         c = random.choices(a)
-        d = random.choices(t)
-        s = random.choices(r)
+        d = random.choices(k)
+        s = random.choices(aa)
         f =  [c[0], s[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(t)
-            s = random.choices(r)
+            d = random.choices(k)
+            s = random.choices(aa)
             f =  [c[0], s[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
