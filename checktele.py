@@ -16,8 +16,7 @@ from threading import Thread
 a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
-k = '1234567890'
-t = '123'
+k = '123'
 aa = 'qwertyuiopassdfghjklzxcvbnm'
 g = 'qwertyuiopassdfghjklzxcvbnm'
 
@@ -175,16 +174,15 @@ def gen_user(choice):
         else:
             pass
     if choice == "10":
-        cs = random.choices(a)
-        dd = random.choices(t)
+        cs = sc = random.choices(a)
+        dq = random.choices(k)
         sc = random.choices(g)
-        f =  [cs[0], sc[0], dd[0]]
+        f =  [cs[0], sc[0], dq[0]]
         username = ''.join(f)
-        if username in banned[0]:
-            cs = random.choices(a)
-            dd = random.choices(t)
+            cs = sc = random.choices(a)
+            dq = random.choices(k)
             sc = random.choices(g)
-            f =  [cs[0], sc[0], dd[0]]
+            f =  [cs[0], sc[0], dq[0]]
             username = ''.join(f)
         else:
             pass
