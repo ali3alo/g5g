@@ -231,15 +231,15 @@ def gen_user(choice):
         else:
             pass
     if choice == "15":
-        ka = random.choices(a)
-    	kk = random.choices(b)
-    	f =  ["vip", kk[0], kk[0], kk[0], kk[0]]
+        c = random.choices(a)
+    	d = random.choices(b)
+    	f =  ["vip", d[0], d[0], d[0], d[0]]
         random.shuffle(f)
     	username = ''.join(f)
         if username in banned[0]:
-            ka = random.choices(a)
-    	    kk = random.choices(b)
-    	    f =  ["vip", kk[0], kk[0], kk[0], kkk[0]] 
+            c = random.choices(a)
+    	    d = random.choices(b)
+    	    f =  ["vip", d[0], d[0], d[0], d[0]] 
             random.shuffle(f)
     	    username = ''.join(f)
         else:
