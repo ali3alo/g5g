@@ -132,6 +132,20 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+    if choice == "7":
+        cs = dd = random.choices(a)
+        dd = random.choices(b)
+        sc = random.choices(g) 
+        f =  [cs[0], dd[0], dd[0], dd[0], sc[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            cs = dd = random.choices(a) 
+            dd = random.choices(b)
+            sc = random.choices(g) 
+            f =  [cs[0], dd[0], dd[0], dd[0], sc[0]]
+            username = ''.join(f)
+        else:
+            pass
     if choice == "8":
         c = d = random.choices(a)
         d = random.choices(b)
