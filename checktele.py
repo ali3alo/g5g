@@ -19,6 +19,7 @@ e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
 k = '1234567890'
 t = '123'
 aa = 'qwertyuiopassdfghjklzxcvbnm'
+g = 'qwertyuiopassdfghjklzxcvbnm'
 
 banned = []
 isclaim = ["off"]
@@ -119,15 +120,15 @@ def gen_user(choice):
             pass
     if choice == "6":
         cs = random.choices(a)
-        ia = random.choices(e)
-        sc = random.choices(aa) 
+        ia = random.choices(aa)
+        sc = random.choices(g) 
         f =  [cs[0], ia[0], ia[0], ia[0], sc[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             cs = random.choices(a) 
-            ia = random.choices(e)
-            sc = random.choices(aa) 
+            ia = random.choices(aa)
+            sc = random.choices(g) 
             f =  [cs[0], ia[0], ia[0], ia[0], sc[0]]
             random.shuffle(f)
             username = ''.join(f)
