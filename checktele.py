@@ -17,7 +17,7 @@ a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
 km = 'vip'
-bbk = '1234567890'
+bbk = '123'
 
 banned = []
 isclaim = ["off"]
@@ -117,15 +117,17 @@ def gen_user(choice):
         else:
             pass
     if choice == "6":
-        c = random.choices(km)
-        d = random.choices(bbk) 
-        f =  [c[0], d[0], d[0], d[0], d[0]]
+        cq = random.choices(a)
+        dq = random.choices(b) 
+        sq = random.choices(e) 
+        f =  [cq[0], dq[0], dq[0], dq[0], sq[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
-            c = random.choices(km)
-            d = random.choices(bbk) 
-            f =  [c[0], d[0], d[0], d[0], d[0]]
+            cq = random.choices(a) 
+            dq = random.choices(b)
+            sq = random.choices(e) 
+            f =  [cq[0], dq[0], dq[0], dq[0], sq[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
@@ -229,17 +231,19 @@ def gen_user(choice):
         else:
             pass
     if choice == "15":
-        c = d = random.choices(a)
-        d = random.choices(e)
-        f =  [c[0], s[0], s[0], s[0], s[0], s[0], c[0]]
+        ka = random.choices(a)
+    	fh = random.choices(b)
+    	kk = random.choices(fh)
+    	f =  ["vip", kk[0], kk[0], kk[0]]
         random.shuffle(f)
-        username = ''.join(f)
+    	username = ''.join(f)
         if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(b)
-            f =  [c[0], s[0], s[0], s[0], s[0], s[0], c[0]]
+            ka = random.choices(a)
+            fh = random.choices(b)
+    	    kk = random.choices(fh)
+    	    f =  ["vip", kk[0], kk[0], kk[0]]
             random.shuffle(f)
-            username = ''.join(f)
+    	    username = ''.join(f)
         else:
             pass
     if choice == "16":
