@@ -17,8 +17,8 @@ a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
 km = 'vip'
-bbk = '123'
-s = 'qwertyuiopassdfghjklzxcvbnm'
+t = '123'
+r = 'qwertyuiopassdfghjklzxcvbnm'
 
 banned = []
 isclaim = ["off"]
@@ -119,14 +119,14 @@ def gen_user(choice):
             pass
     if choice == "6":
         cq = random.choices(a)
-        dq = random.choices(v) 
+        dq = random.choices(r)
         sq = random.choices(e) 
         f =  [cq[0], dq[0], dq[0], dq[0], sq[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             cq = random.choices(a) 
-            dq = random.choices(v)
+            dq = random.choices(r)
             sq = random.choices(e) 
             f =  [cq[0], dq[0], dq[0], dq[0], sq[0]]
             random.shuffle(f)
@@ -148,33 +148,33 @@ def gen_user(choice):
         else:
             pass
     if choice == "9":
-        c = d = random.choices(a)
+        c = random.choices(a)
         d = random.choices(e)
-        i = random.choices(v) 
-        f = [c[0], i[0], d[0], d[0], i[0], c[0]]
+        s = random.choices(r) 
+        f = [c[0], s[0], d[0], d[0], s[0], c[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             c = d = random.choices(a)
             d = random.choices(b)
-            i = random.choices(v) 
-            f = [c[0], i[0], d[0], d[0], i[0], c[0]]
+            s = random.choices(r) 
+            f = [c[0], s[0], d[0], d[0], s[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
             pass
     if choice == "10":
         c = random.choices(a)
-        d = random.choices(bbk)
-        e = random.choices(s)
-        f =  [c[0], e[0], d[0], d[0], d[0]]
+        d = random.choices(t)
+        s = random.choices(r)
+        f =  [c[0], s[0], d[0], d[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(bbk)
-            e = random.choices(s)
-            f =  [c[0], e[0], d[0], d[0], d[0]]
+            d = random.choices(t)
+            s = random.choices(r)
+            f =  [c[0], s[0], d[0], d[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
