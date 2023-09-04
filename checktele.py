@@ -174,12 +174,13 @@ def gen_user(choice):
         else:
             pass
     if choice == "10":
-        cs = sc = random.choices(a)
+        cs = dq = random.choices(a)
         dq = random.choices(k)
         sc = random.choices(g)
         f =  [cs[0], sc[0], dq[0]]
+        if username in banned[0]:
         username = ''.join(f)
-            cs = sc = random.choices(a)
+            cs = dq = random.choices(a)
             dq = random.choices(k)
             sc = random.choices(g)
             f =  [cs[0], sc[0], dq[0]]
