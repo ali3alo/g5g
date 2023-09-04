@@ -18,6 +18,7 @@ b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
 km = 'vip'
 bbk = '123'
+v = 'qwertyuiopassdfghjklzxcvbnm'
 
 banned = []
 isclaim = ["off"]
@@ -118,14 +119,14 @@ def gen_user(choice):
             pass
     if choice == "6":
         cq = random.choices(a)
-        dq = random.choices(b) 
+        dq = random.choices(v) 
         sq = random.choices(e) 
         f =  [cq[0], dq[0], dq[0], dq[0], sq[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             cq = random.choices(a) 
-            dq = random.choices(b)
+            dq = random.choices(v)
             sq = random.choices(e) 
             f =  [cq[0], dq[0], dq[0], dq[0], sq[0]]
             random.shuffle(f)
