@@ -17,6 +17,7 @@ a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
 k = '123'
+ae = 'loli'
 aa = 'qwertyuiopassdfghjklzxcvbnm'
 g = 'qwertyuiopassdfghjklzxcvbnm'
 
@@ -184,6 +185,18 @@ def gen_user(choice):
             dq = random.choices(k)
             sc = random.choices(g)
             f =  [cs[0], sc[0], dq[0]]
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "11":
+        cs = dq = random.choices(ae)
+        dq = random.choices(b)
+        f =  [cs[0], dq[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            cs = dq = random.choices(ae)
+            dq = random.choices(b)
+            f =  [cs[0], dq[0]]
             username = ''.join(f)
         else:
             pass
